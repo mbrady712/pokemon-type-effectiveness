@@ -1,0 +1,170 @@
+/*General Styles*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    background: url(images/background.png);
+    background-size: 100vw 100vh;
+    box-shadow: inset 0 0 0 100vh rgba(0,0,0,0.15);
+    /*Background from https://www.pinterest.com/pin/738520038900997761/*/
+}
+h1, h4, .inner, .responsebox, .submit, .vs{
+    text-align: center;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: Electrolize;
+    src: url(fonts/Electrolize-Regular.ttf);
+}
+@font-face {
+    font-family: Cairo;
+    src: url(fonts/Cairo-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Fingerpaint;
+    src: url(fonts/FingerPaint-Regular.ttf);
+}
+@font-face {
+    font-family: Dosen Killer;
+    src: url(fonts/DosenKiller-9Y5ny.ttf);
+}
+@font-face {
+    font-family: No Debate;
+    src: url(fonts/NoDebate-d9qJR.ttf);
+}
+
+/*Header*/
+.headers{
+    background: #7fac71;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid #6a92f2;
+}
+.headers img{
+    width: 50px;
+    height: 50px;
+}
+h1{
+    font-family: Electrolize, Helvetica, sans-serif;
+    font-size: 40px;
+    padding-top: 20px;
+    color: white;
+}
+h4{
+    font-family: Cairo;
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+/*Content*/
+.outer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 25px;
+    font-family: Dosen Killer;
+    font-size: 30px;
+}
+.inner div{
+    padding: 20px;
+}
+select{
+    padding: 5px;
+    font-family: Cairo;
+    border-radius: 5px;
+    border: 2px solid #6a92f2;
+    background: #7fac71;
+}
+.inner img, .vs img{
+    width: 200px;
+}
+.vs{
+    padding: 70px 0;
+}
+input{
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: Dosen Killer;
+    background: #ffe600;
+    border: 2px solid #4416dc;
+    border-radius: 5px;
+    transition: .25s;
+    margin-top: -20px;
+}
+input:hover{
+    background-color: #f78c08;
+}
+.responsebox{
+    font-family: Dosen Killer;
+    font-size: 40px;
+}
+
+/*Footer*/
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-family: Cairo;
+}
+
+/* Responsive styles*/
+
+/*280px — 480px: Mobile devices*/
+@media only screen and (min-width: 280px) and (max-width: 480px){
+    /*General styles*/
+    body{
+        background-size: cover;
+        box-shadow: inset 0 0 0 100vh rgba(0,0,0,0.15);
+        background-repeat: no-repeat;
+    }
+    /*Header*/
+    .headers img{
+        display: none;
+    }
+    .headers{
+        padding: 5px;
+    }
+    /*Content*/
+    .outer{
+        grid-template-columns: auto;
+    }
+    .vs{
+        order: 3;
+    }
+}
+
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .inner img, .vs img{
+        width: 150px;
+    }
+}
+
+/*769px — 1024px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+}
+
+/*1025px — 1205px: Desktops, large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1205px){
+}
+
+/*
+Background color pallete:
+1) #7fac71: grass green
+2) #6a92f2: ocean blue
+*/
+
+/*
+GIF color pallette:
+1) #ffe600: bright yellow
+2) #4416dc: blue-purple outline
+3) #ef251b: red from letters
+4) #f78c08: orange from gradient
+*/

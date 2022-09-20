@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Pokemon Type Relationships</title>
+    <!--Type logos attribution: Andreuvv, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons-->
+</head>
+<body> 
+    <div class="headers">
+        <!--pokeball img src: https://www.clipartmax.com/middle/m2H7K9d3H7b1i8b1_pokeball-clipart-transparent-pokeball-png/-->
+        <img src="images/pokeball.png">
+        <img src="images/pokeball.png">
+        <img src="images/pokeball.png">
+        <div>
+            <h1>Pokemon Type Relationships</h1>
+            <h4>Select an attacking type and a defending type to check type effectiveness.</h4>
+        </div>
+        <img src="images/pokeball.png">
+        <img src="images/pokeball.png">
+        <img src="images/pokeball.png">
+    </div>
+    <div class="outer">
+        <div class="inner">Attacking Type:<br>
+            <div>
+            <select id="attack" onchange="addPics()">
+                <option>Normal</option>
+                <option>Fire</option>
+                <option>Water</option>
+                <option>Grass</option>
+                <option>Electric</option>
+                <option>Ice</option>
+                <option>Fighting</option>
+                <option>Poison</option>
+                <option>Ground</option>
+                <option>Flying</option>
+                <option>Psychic</option>
+                <option>Bug</option>
+                <option>Rock</option>
+                <option>Ghost</option>
+                <option>Dragon</option>
+                <option>Dark</option>
+                <option>Steel</option>
+                <option>Fairy</option>
+            </select>
+            </div>
+            <div id="attackpic"></div>
+        </div>
+        <div class="vs">
+            <div class="submit">
+                <input type="submit" value="GO!" onclick=processInput()>
+            </div>
+            <img src="images/vs.gif">
+            <!--GIF from https://giphy.com/stickers/Topito-stickers-vs-versus-XDXp00bA5e9kqFg1Gw-->
+            <div class="responsebox">
+                <div id="response"></div>
+            </div>
+        </div>
+        <div class="inner">Defending Type:<br>
+            <div>
+            <select id="defense" onchange="addPics()">
+                <option>Normal</option>
+                <option>Fire</option>
+                <option>Water</option>
+                <option>Grass</option>
+                <option>Electric</option>
+                <option>Ice</option>
+                <option>Fighting</option>
+                <option>Poison</option>
+                <option>Ground</option>
+                <option>Flying</option>
+                <option>Psychic</option>
+                <option>Bug</option>
+                <option>Rock</option>
+                <option>Ghost</option>
+                <option>Dragon</option>
+                <option>Dark</option>
+                <option>Steel</option>
+                <option>Fairy</option>
+            </select>
+            </div>
+            <div id="defensepic"></div>
+        </div>
+    </div>
+
+    <footer>
+        Created by Michael Brady
+    </footer>
+</body>
+</html>
